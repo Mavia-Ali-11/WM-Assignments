@@ -1,0 +1,470 @@
+@font-face {
+    font-family: Roboto;
+    src: url('Fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url('Fonts/Roboto-Bold.ttf');
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0.9;
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    background-color: black;
+}
+
+.header {
+    padding: 2px;
+    min-height: 44px;
+}
+
+#strip {
+    width: 35px;
+    padding: 0px;
+    height: 21px;
+    border: none;
+    border-radius: 0px;
+    background-color: gainsboro;
+}
+
+#strip:focus {
+    outline: none;
+}
+
+#logo {
+    color: lightgray;
+}
+
+#logo:hover {
+    color: white;
+}
+
+.nav-item {
+    margin-left: 78px;
+    font-family: Roboto;
+}
+
+.nav-item a , .nav-item i {
+    font-size: 14px;
+    color: lightgray;
+    text-decoration: none;
+}
+
+.nav-item a:hover, .nav-item i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#covid {
+    padding: 12px;
+    background-color: #0071E3;
+}
+
+#covid p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    font-family: Roboto;
+}
+
+#online {
+    padding: 12px;
+    background-color: whitesmoke;
+}
+
+#online p {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    font-family: Roboto;
+}
+
+#iphone {
+    padding: 45px;
+    height: fit-content;
+    padding-bottom: 25px;
+    background-color: #fbfbfd;
+}
+
+#iphone h1 {
+    font-size: 3.3em;
+    color: #1d1d1f;
+    text-align: center;
+    font-family: RobotoBold;
+}
+
+#iphone h3 {
+    color: #1d1d1f;
+    font-weight: bold;
+    text-align: center;
+    font-family: Roboto;
+}
+
+#iphone p {
+    width: 80%;
+    font-size: 17px;
+    margin: 15px auto;
+    color: darkgray;
+    text-align: center;
+    font-family: Roboto;
+}
+
+#iphone a {
+    font-size: 19px;
+    line-height: 10px;
+    font-family: Roboto;
+}
+
+#iphone12 {
+    min-height: 305px;
+    background-size: cover;
+    background-image: url('Images/iphone12.PNG');
+}
+
+#iphone12-black {
+    bottom: 1px;
+    min-height: 305px;
+    position: relative;
+    background-size: cover;
+    background-image: url('Images/iphone12-black.PNG');
+}
+
+#ipad-air {
+    min-height: 480px;
+    background-size: cover;
+    background-image: url('Images/ipadair.jpg');
+}
+
+#black-man, #smart-watch {
+    min-height: 580px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid transparent;
+    background-image: url('Images/blackman.jpg');
+} 
+
+#smart-watch {
+    background-image: url('Images/smartwatch.jpg');
+}
+
+#black-man h1, #black-man h5, #smart-watch h5 {
+    width: 60%;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    margin: 40px auto 0px;
+    font-family: RobotoBold;
+}
+
+#black-man h5, #smart-watch h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: Arial;
+    color: lightgray;
+}
+
+#watch {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    margin: 40px auto 0px;
+    font-family: RobotoBold;
+}
+
+#series {
+    color: red;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#learn {
+    margin: 15px auto;
+    width: fit-content;
+    font-family: Roboto;
+}
+
+#brands {
+    padding: 0px !important;
+    border: 3px solid white;
+    background-color: #fbfbfd;
+}
+
+#limited {
+    font-size: 13px;
+    line-height: 0px;
+    margin-top: 40px;
+    text-align: center;
+    color: orangered;
+    font-family: Roboto;
+}
+
+#brands h1 {
+    width: 340px;
+    margin: auto;
+    color: #1d1d1f;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: RobotoBold; 
+}
+
+#brands h3 {
+    width: 60%;
+    font-size: 1.2em;
+    color: #1d1d1f;
+    margin: 10px auto;
+    text-align: center;
+    font-family: Roboto;
+}
+
+#brands span {
+    color: #1d1d1f;
+    font-size: 40px;
+}
+
+#brands #watch i {
+    bottom: 2px;
+    position: relative;
+}
+
+#apple-app, #three-watch {
+    margin-top: 40px;
+    min-height: 370px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('Images/appleapps.PNG');
+}
+
+#three-watch {
+    min-height: 300px;
+    background-image: url('Images/threewatches.jpg');
+}
+
+#smile, #moon {
+    min-height: 500px;
+    background-size: cover;
+    border: 3px solid white;
+    background-repeat: no-repeat;
+    background-image: url('Images/smile.jpg');
+} 
+
+#moon {
+    background-image: url('Images/moon.jpg');
+}
+
+#smile span, #smile h5 {
+    width: 60%;
+    font-size: 40px;
+    color: #fbd039;
+    text-align: center;
+    margin: 50px auto 0px;
+    font-family: RobotoBold;
+}
+
+#smile h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: Arial;
+}
+
+#watch {
+    font-size: 45px;
+    color: #fbd039;
+    text-align: center;
+    margin: 40px auto 0px;
+    font-family: RobotoBold;
+}
+
+#series {
+    color: red;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#play {
+    margin: 130px auto;
+    width: fit-content;
+}
+
+#play a {
+    color: white;
+    font-size: 17px;
+    font-family: Roboto;
+}
+
+#details div {
+    width: 75%;
+    font-size: 12px;
+    line-height: 17px;
+    color: darkgray;
+    text-align: justify;
+    font-family: Roboto;
+}
+
+#details, #footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f7;
+}
+
+#footer .row div {
+    margin: auto;
+    min-width: 202px;
+    min-height: 410px;
+    padding-right: 14px;
+    display: inline-block;
+}
+
+#footer .row div h6 {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+#footer .row div a {
+    opacity: 0.9;
+    color: #333;
+    display: block;
+    font-size: 11px;
+    margin-top: 7px;
+    list-style: none;
+    font-family: Roboto;
+}
+
+#shop, #copy {
+    background-color: #f5f5f7;
+}
+
+#details div, #shop div, #copy .row {
+    width: 75%;
+    margin: auto;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 17px;
+    color: darkgray;
+    font-family: Roboto;
+}
+
+#copy .row div {
+    margin-top: 5px;
+    padding: 0px 15px;
+    display: inline-block;
+    border-right: 2px solid lavender;
+}
+
+#copy .row div a {
+    opacity: 0.8;
+    color: #333;
+}
+
+#copy .row #copyright {
+    border: none;
+    padding-left: 0px;
+}
+
+@media only screen and (max-width: 992px) {
+    #navbar {
+        opacity: 1;
+        background-color: black;
+    }
+    .header {
+        width: 95%;
+        padding: 2px 10px;
+    }
+    #logo {
+        font-size: 25px;
+    }
+    .nav-item {
+        margin-top: 25px;
+        text-align: left;
+        margin-left: 0px;
+        line-height: 35px;
+        border-bottom: 1px solid lightgray;
+    }
+    #iphone h1 {
+        font-size: 2.2em;
+    }
+    #iphone h3 {
+        font-size: 1.2em;
+    }
+    #iphone p {
+        font-size: 15px;
+    }
+    #iphone12 {
+        background-image: url('Images/iphone12-full.PNG');
+    }
+    #iphone12-black {
+        background-image: url('Images/iphone12-black2.PNG');
+    }
+    #main, #main1 {
+        padding: 0px !important;
+        max-width: 92% !important;   
+    }
+    #black-man, #smart-watch, #smile, #moon, #brands {
+        border-bottom: 5px solid transparent;
+    }
+    #black-man h1, #black-man h5, #smart-watch h5 {
+        min-width: 90%;
+        font-size: 30px;
+    }
+    #watch span {
+        font-size: 30px;
+    }
+    #apple-app {
+        min-height: 310px;
+    }
+    #black-man h5, #smart-watch h5 {
+        padding: 0px;
+        font-size: 17px;
+    }
+    #brands h1 {
+        font-size: 2em;
+    }
+    #brands h3 {
+        width: 75%;
+        font-size: 1.1em;
+    }
+    #smile h5 {
+        width: 70%;
+    }
+    #details div, #footer .row, #shop div, #copy .row {
+        min-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    #ipad-air {
+        background-image: url('Images/ipadair2.jpg');
+    }
+    #black-man, #smart-watch, #smile, #moon, #brands {
+        border: none;
+    }
+    #footer .row div {
+        min-width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    body{
+        zoom: 50%;
+    }
+}
+
+@media only screen and (max-width: 170px) {
+    body{
+        zoom: 30%;
+    }
+}

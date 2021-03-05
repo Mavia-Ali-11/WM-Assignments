@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignments</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="heading">WEB AND MOBILE HYBRID APPLICATION DEVELOPMENT</h1>
+    </div>
+
+    <div id="myself">
+        <div>
+            <img id="profile" src="profile.jpg" alt="Mavia Ali">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img">
+                <div id="caption"></div>
+            </div>
+        </div>
+        <div id="mydetails">
+            <h1>Mavia Ali</h1>
+            <h2>- Roll No: 22280</h2>
+            <h2>
+                <abbr title="facebook"><a class="fa fa-facebook-square" id="contact"
+                        href="https://facebook.com/maviaali.963" target="_blank"></a></abbr>
+
+                <abbr title="twitter"> <a class="fa fa-twitter-square" id="contact"
+                        href="https://twitter.com/maviaali597" target="_blank"></a></abbr>
+
+                <abbr title="linkedin"><a class="fa fa-linkedin-square" id="contact"
+                        href="https://pk.linkedin.com/in/mavia-ali-0117631b9" target="_blank"></a></abbr>
+
+                <abbr title="email"><a class="fa fa-envelope-square" id="contact"
+                        href="mailto:maviaali597@gmail.com" target="_blank"></a></abbr>
+            </h2>
+        </div>
+    </div>
+    <hr id="none">
+
+    <div>
+        <center>
+            <h1 id="assignments">My Assignments<hr></h1>
+        </center>
+    </div>
+
+    <div id="buttons">
+        <center>
+            <a class="button" href="Assignment_1/index.html" target="_blank">Assignment 1</a>
+            <a class="button" href="Assignment_2/index.html" target="_blank">Assignment 2</a>
+            <a class="button" href="Assignment_3/index.html" target="_blank">Assignment 3</a>
+            <a class="button" href="Assignment_4/index.html" target="_blank">Assignment 4</a>
+            <a class="button" href="Assignment_5/index.html" target="_blank">Assignment 5</a>
+            <a class="button" href="Assignment_6/index.html" target="_blank">Assignment 6</a>
+            <a class="button" href="Assignment_7/index.html" target="_blank">Assignment 7</a>
+            <a class="button" href="Assignment_8/index.html" target="_blank">Assignment 8</a>
+            <a class="button" href="Assignment_9/index.html" target="_blank">Assignment 9</a>
+            <a class="button" href="Assignment_10/index.html" target="_blank">Assignment 10</a>
+            <a class="button" href="Assignment_11/index.html" target="_blank">Assignment 11</a>
+        </center>
+    </div>
+
+    <br>
+
+    <div id="footer">
+        <div id="course">
+            <h4>Offered by</h4>
+            <a href="https://www.facebook.com/groups/WebMobileAppCourse" target="_blank">Saylani Mass IT
+                Training</a><br>
+            <a href="https://www.facebook.com/saylaniwelfare" target="_blank">Saylani Welfare International Trust</a>
+        </div>
+        <div id="instruct">
+            <h4>Instructors</h4>
+            <a href="">Muhammad Umair Khan</a><br>
+            <a href="https://Uwww.facebook.com/basitahmed786" target="_blank">Basit Ahmed</a><br>
+            <a href="">&nbsp;</a>
+        </div>
+        <div id="copyright">
+            <a href="#">Copyright &copy; 2020</a>
+        </div>
+    </div>
+
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("profile");
+        var modalImg = document.getElementById("img");
+        var captionText = document.getElementById("caption");
+        var span = document.getElementsByClassName("close")[0];
+
+        this.onload = function () {
+            modal.style.display = "none";
+            span.style.display = "none";
+        }
+
+        img.onclick = function () {
+            modalImg.src = this.src;
+            modal.style.display = "block";
+            span.style.display = "block";
+            captionText.innerHTML = this.alt;
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+
+
+</body>
+
+</html>

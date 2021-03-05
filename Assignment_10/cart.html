@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/cart.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cart | Red Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <!-- -------------------------------- Navbar / Login ------------------------------------- -->
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="130px" alt="Red Store"></a>
+            </div>
+            <div class="pages">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </div>
+            <div class="others">
+                <a href="cart.html">
+                    <img src="images/cart.png" width="30" height="30" alt="cart">
+                </a>
+                <img src="images/menu.png" id="menu" class="menu" onclick="openNavbar()">
+            </div>
+        </div>
+        <div id="navbar">
+            <div class="col-1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------------- Cart Items ------------------------------------- -->
+
+
+
+    <div class="cart">
+        <div class="row">
+            <div class="col-1">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th class="prices">Sub Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="images/buy-1.jpg" alt="cart-img">
+                                    <div>
+                                        <p>Red Printed T-Shirt</p>
+                                        <small>Price: $50.00</small><br>
+                                        <a href="#">Remove</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="3"></td>
+                            <td class="prices">$150.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="images/buy-2.jpg" alt="cart-img">
+                                    <div>
+                                        <p>HRX Sports Shoes</p>
+                                        <small>Price: $75.00</small><br>
+                                        <a href="#">Remove</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="1"></td>
+                            <td class="prices">$75.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="images/buy-3.jpg" alt="cart-img">
+                                    <div>
+                                        <p>HRX Gray Trackpants</p>
+                                        <small>Price: $45.00</small><br>
+                                        <a href="#">Remove</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="2"></td>
+                            <td class="prices">$90.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="total-price">
+                    <table>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>$315.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td>$20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>$335.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------------- Footer ------------------------------------- -->
+
+
+
+    <div class="footer">
+        <div class="row">
+            <div class="col-1">
+                <h4>Download Our App</h4>
+                <p>Download App for android and ios mobile phone.</p>
+                <img src="images/play-store.png" width="100" alt="playstore">
+                <img src="images/app-store.png" width="100" alt="appstore">
+            </div>
+            <div class="col-2" style="text-align: center;">
+                <img src="images/logo-white.png" width='160' alt="RedStore">
+                <p style="margin-top: 20px;">Our Purpose Is To Sustainably Make the Pleasure and Benfits
+                    of Sports
+                    Accessible to the Many.</p>
+            </div>
+
+            <div class="col-3">
+                <h4 style="margin-bottom: 10px;">Useful Links</h4>
+                <ul>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Blog Post</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Join Affiliate</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h4 style="margin-bottom: 10px;">Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr style="border-color: gray;">
+        <div class="copyright">
+            Copyright 2020 &copy; Mavia Ali
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

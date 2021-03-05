@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <table cellpadding=0>
+        <thead>
+            <tr>
+                <td colspan="7" id="display">
+                    <input type="number" readonly value="0">
+                </td>
+            </tr>
+        </thead>
+        <tbody id="functions">
+            <tr class="functions">
+                <td><button>Inv</button></td>
+                <td><button>Rad</button></td>
+                <td><button>Deg</button></td>
+                <td><button>Hyp</button></td>
+            </tr>
+            <tr class="functions">
+                <td><button>Sin</button></td>
+                <td><button>Cos</button></td>
+                <td><button>Tan</button></td>
+                <td><button>Log</button></td>
+            </tr>
+            <tr class="functions">
+                <td><button>ln</button></td>
+                <td><button>&excl;</button></td>
+                <td><button>^</button></td>
+                <td><button>π</button></td>
+            </tr>
+            <tr class="functions">
+                <td><button>e</button></td>
+                <td><button>(</button></td>
+                <td><button>)</button></td>
+                <td><button>&Sqrt;</button></td>
+            </tr>
+        </tbody>
+        <tbody id="card1">
+            <tr>
+                <td colspan="7">
+                    <div id="scientific" onclick="openScientific()">
+                        <hr>
+                        <hr>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><button class="others">CE</button></td>
+                <td><button class="others">C</button></td>
+                <td><button class="fas fa-backspace"></i></button></td>
+                <td><button class="operators"><i class="fas fa-percentage"></i></button></td>
+            </tr>
+            <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button class="operators"><i class="fa fa-divide"></i></button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button class="operators"><i class="fa fa-times"></i></button></td>
+            </tr>
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button class="operators"><i class="fa fa-minus"></i></button></td>
+            </tr>
+            <tr>
+                <td><button style="font-weight: bold;">.</button></td>
+                <td><button>00</button></td>
+                <td><button>0</button></td>
+                <td><button class="operators"><i class="fas fa-plus"></i></button></td>
+            </tr>
+        </tbody>
+        <tfoot id="card2">
+            <tr>
+                <td colspan="7">
+                    <button class="equals"><i class="fa fa-equals"></i></button>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        var state = 'card';
+        function openScientific() {
+            var main = document.getElementById('main');
+            var card1 = document.getElementById('card1');
+            var card2 = document.getElementById('card2');
+            var functions = document.getElementById('functions');
+            if (state == 'close') {
+                card1.style.transform = 'translateY(0px)';
+                card2.style.transform = 'translateY(0px)';
+                functions.style.boxShadow = '0px 0px 20px rgba(0, 0, 0, 0.5)';
+                state = 'open';
+
+            }
+            else {
+                card1.style.transform = 'translateY(-140px)';
+                card2.style.transform = 'translateY(-140px)';
+                functions.style.boxShadow = 'none';
+                state = 'close';
+            }
+        }
+    </script>
+</body>

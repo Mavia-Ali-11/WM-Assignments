@@ -1,0 +1,190 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url('bg_img.jpeg');
+}
+
+#main {
+    background-color: rgba(58, 58, 158, 0.6);
+}
+
+#header {
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    font-size: 24px;
+    position: sticky;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 10px 40px;
+    margin-bottom: 55px;
+    font-family: Arial Narrow;
+    background-color: #1e1f26;    
+}
+
+#logo {
+    color: white;
+    text-decoration: none;
+}
+
+#link {
+    font-size: 13px;
+    color: slategray;
+    font-weight: normal;
+    font-family: Verdana;
+    text-decoration: none;
+}
+
+#btn0 {
+    width: 65px;
+    height: 18px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 2px;
+    background-color: #565b6b;
+}
+
+#btn0:hover {
+    color: black;
+    background-color: #47cf73;
+}
+
+#save {
+    cursor: pointer;
+    font-size: 28px;
+    color: #adafbc;
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 0px 18px 7px;
+    border: 3px solid #565b6b;
+    background-color: transparent;
+}
+
+#save:hover {
+    background-color: #565b6b;
+}
+
+#btn1 {
+    width: 140px;
+    height: 45px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 5px;
+    border-radius: 3px;
+    background-color: #565b6b;
+}
+
+#btn2, #btn3 {
+    width: 100px;
+    height: 45px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 5px;
+    border-radius: 3px;
+    font-family: Arial Narrow;
+    background-color: #47cf73;
+}
+
+#btn3 {
+    color: white;
+    background-color: #565b6b;
+}
+
+#btn1:hover, #btn2:hover, #btn3:hover {
+    opacity: 0.9;
+}
+
+#heading h1, #heading h3 {
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+}
+
+#heading h3 {
+    font-size: 20px;
+    color: lightgray;
+    font-weight: normal;
+    font-family: Segoe UI;
+}
+
+#form {
+    width: 46%;
+    padding: 50px;
+    border-radius: 5px;
+    height: max-content;
+    margin: 35px auto 0px;
+    background-color: rgb(27, 27, 50, 0.8);
+}
+
+label {
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 200px;
+    color: gainsboro;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+label span {
+    font-size: 15px;
+}
+
+#name, #email, #age, #role, #like {
+    width: 600px;
+    border: none;
+    padding: 8px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    color: darkslategray;
+    border: 1px solid lightgray;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+#role, #like {
+    width: 618px;
+}
+
+#comments {
+    width: 592px;
+    padding: 12px;
+    font-size: 16px;
+    resize: vertical;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+#recommend, #check {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+#recommend + span, #check + span {
+    font-size: 18px;
+    color: gainsboro;
+    font-family: Verdana;
+}
+
+#submitBtn {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 17px;
+    border-radius: 3px;
+    margin: 10px 0px 15px;
+    background-color: #37af65;
+    font-family: 'Poppins', 'sans-serif';
+}

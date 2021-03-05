@@ -1,0 +1,78 @@
+body {
+    padding: 20px;
+    background-color: silver;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+h1 {
+    padding: 20px;
+    color: white;
+    color: #64645A;
+    background-color: hsla(0, 100%, 100%, 0.5);
+}
+
+p {
+    margin: 0px;
+    padding: 5px;
+    color: white;
+}
+
+.zero {
+    background-color: rgba(255, 20, 146, 0.9);
+}
+
+.one {
+    background-color: rgba(255, 20, 146, 0.8);
+}
+
+.two {
+    background-color: rgba(255, 20, 146, 0.7);
+}
+
+.three {
+    background-color: rgba(255, 20, 146, 0.6);
+}
+
+.four {
+    background-color: rgba(255, 20, 146, 0.5);
+}
+
+.five {
+    background-color: rgba(255, 20, 146, 0.4);
+}
+
+.six {
+    background-color: rgba(255, 20, 146, 0.3);
+}
+
+.seven {
+    background-color: rgb(0, 187, 136);
+}
+
+.eight {
+    background-color: rgba(30, 144, 255, 0.3);
+}
+
+.nine {
+    background-color: rgba(30, 144, 255, 0.4);
+}
+
+.ten {
+    background-color: rgba(30, 144, 255, 0.5);
+}
+
+.eleven {
+    background-color: rgba(30, 144, 255, 0.6);
+}
+
+.twelve {
+    background-color: rgba(30, 144, 255, 0.7);
+}
+
+.thirteen {
+    background-color: rgba(30, 144, 255, 0.8);
+}
+
+.fourteen {
+    background-color: rgba(30, 144, 255, 0.9);
+}

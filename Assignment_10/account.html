@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/cart.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Account | Red Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <!-- -------------------------------- Navbar / Login ------------------------------------- -->
+
+    <div class="main">
+        <div class="container" style="margin-bottom: 0px;">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="130px" alt="Red Store"></a>
+                </div>
+                <div class="pages">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li>
+                            <a style="border-bottom: 2px solid black; color:black;" href="account.html">Account</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="others">
+                    <a href="cart.html"><img src="images/cart.png" width="30" height="30" alt="cart"></a>
+                    <img src="images/menu.png" id="menu" class="menu" onclick="openNavbar()">
+                </div>
+            </div>
+            <div id="navbar">
+                <div class="col-1">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li style="border-color: #ff523b;">
+                            <a href="account.html" style="color: #ff523b;">Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="account-page">
+                <div class="container-2">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="images/image1.png" width="100%" alt="work-out">
+                        </div>
+                        <div class="col-2">
+                            <div class="form-container">
+                                <div class="form-btn">
+                                    <span onclick="login()">Login</span>
+                                    <span onclick="register()">Register</span>
+                                    <hr id="current">
+                                </div>
+        
+                                <br>
+                                <form id='form1'>
+                                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                    <input type="text" placeholder="Username" id="">
+                                    <input type="password" placeholder="Password" id="">
+                                    <button type="submit" class="btn">Login</button>
+                                    <a href="#">Forgot password?</a>
+                                </form>
+        
+                                <form id="form2">
+                                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                    <input type="text" placeholder="Username" id="">
+                                    <input type="email" placeholder="Email" id="">
+                                    <input type="password" placeholder="Password" id="">
+                                    <button type="submit" class="btn">Register</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- -------------------------------- Login ------------------------------------- -->
+
+
+
+    
+
+
+    <!-- -------------------------------- Footer ------------------------------------- -->
+
+
+
+    <div class="footer">
+        <div class="row">
+            <div class="col-1">
+                <h4>Download Our App</h4>
+                <p>Download App for android and ios mobile phone.</p>
+                <img src="images/play-store.png" width="100" alt="playstore">
+                <img src="images/app-store.png" width="100" alt="appstore">
+            </div>
+            <div class="col-2" style="text-align: center;">
+                <img src="images/logo-white.png" width='160' alt="RedStore">
+                <p style="margin-top: 20px;">Our Purpose Is To Sustainably Make the Pleasure and Benfits
+                    of Sports
+                    Accessible to the Many.</p>
+            </div>
+
+            <div class="col-3">
+                <h4 style="margin-bottom: 10px;">Useful Links</h4>
+                <ul>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Blog Post</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Join Affiliate</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h4 style="margin-bottom: 10px;">Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr style="border-color: gray;">
+        <div class="copyright">
+            Copyright 2020 &copy; Mavia Ali
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

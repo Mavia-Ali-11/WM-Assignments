@@ -1,0 +1,345 @@
+@font-face {
+    font-family: OpenSans;
+    src: url('Assignment_9/Fonts/Roboto-Bold.ttf');
+}
+
+html , body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: whitesmoke;
+}
+
+#header {
+    top: 0px;
+    z-index: 1;
+    width: auto;
+    padding: 28px;
+    position: sticky;
+    background-color: #2196f3;
+    box-shadow: 0 0 15px #2196f3;
+}
+
+#heading {
+    margin: 0 auto;
+    color: white;
+    font-size: 30px;
+    transition: 0.5s;
+    font-weight: bold;
+    text-align: center;
+    word-spacing: 10px;
+    padding-left: 25px;
+    letter-spacing: 1px;
+    font-family: Franklin Gothic Medium;
+}
+
+#myself div, #footer div {
+    display: inline-block;
+}
+
+#mydetails {
+    bottom: 20px;
+    position: relative;
+}
+
+#mydetails h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: steelblue;
+    font-family: OpenSans;
+}
+
+#mydetails h2 {
+    bottom: 25px;
+    font-size: 18px;
+    line-height: 28px;
+    position: relative;
+    color: dodgerblue;
+    font-family: OpenSans;
+}
+
+#contact , #mailto {
+    font-size: 28px;
+    cursor: pointer;
+    color: royalblue;
+    text-decoration: none;
+    margin: 5px 10px 0px 0px;
+}
+
+#mail {
+    color: blue;
+    font-size: 19px;
+    font-family: Calibri;
+}
+
+#contact:hover, #mailto:hover, #mail:hover {
+    opacity: 0.9;
+}
+
+#profile {
+    width: 205px;
+    height: 210px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 120px;
+    display: inline-block;
+    margin: 30px 20px 0px 60px;
+    border: 7px ridge #2196f3;
+}
+
+#profile:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+#none {
+    width: 90%;
+    border-color: gainsboro;
+}
+
+#assignments {
+    font-size: 35px;
+    margin-top: 80px;
+    color: #2196f3;
+    font-weight: bold;
+    font-family: Tahoma;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 3%;
+    border: 1px solid #2196f3;
+}
+
+#buttons {
+    width: 85%;
+    margin: 0px auto;
+    margin-bottom: 100px;
+}
+
+.button {
+    width: 250px;
+    padding: 23px;
+    font-size: 22px;
+    transition: 0.5s;
+    overflow: hidden;
+    color: #1670f0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 10px 20px 10px 0px;
+    transform: translate(-0%,-0%);
+    box-shadow: 0 3px 3px #1670f0;
+    font-family: Lucida Sans Regular;
+}
+
+.button:hover {
+    color: white;
+    transition: 0.5s;
+    font-weight: bold;
+    margin-bottom: 3px;
+    background-color: #2196f3;
+    box-shadow: 0 0 5px #2196f3, 0 0 3px #2196f3;
+}
+
+#footer {
+    padding: 5px 80px;
+    background-color: #2196f3;
+}
+
+#course {
+    bottom: 25px;
+    position: relative;
+    margin-right: 50px;
+}
+
+#course h4 , #instruct h4 {
+    color: white;
+    font-size: 18px;
+    width: fit-content;
+    font-family: OpenSans;
+}
+
+#course a , #instruct a {
+    bottom: 12px;
+    font-size: 15px;
+    line-height: 25px;
+    position: relative;
+    width: fit-content;
+    font-family: Arial;
+    color: lightgray;
+    text-decoration: none;
+}
+
+#copyright a {
+    bottom: 55px;
+    color:lightgray;
+    width: fit-content;
+    position: relative;
+    margin-left: 600px;
+}
+
+#footer a:hover {
+    color: darkslategray;
+}
+
+#myModal {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    display: none;
+    overflow: auto;
+    position: fixed;
+    padding-top: 20px;
+    background-color: rgba(0,0,0,0.9);
+}
+  
+.modal-content {
+    width: 550px;
+    height: 570px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 500px;
+}
+
+#caption  {
+    color: gold;
+    height: 150px;
+    display: block;
+    margin-top: 1pc;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 38pc;
+    font-family: OpenSans;
+}
+  
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+  
+.close {
+    top: 15px;
+    right: 35px;
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+    transition: 0.3s;
+    font-weight: bold;
+    position: absolute;
+}
+
+@media only screen and (max-width: 980px) {
+
+    #header {
+        padding: 55px;
+    }
+
+    #heading {
+        font-size: 48px;
+        padding-left: 20px;
+    }
+
+    #myModal {
+        height: 100%;
+        padding-top: 20pc;
+    }
+
+    .modal-content {
+        width: 90%;
+        height: 900px;
+    }
+
+    #caption  {
+        font-size: 70px;
+        margin-top: 60px;       
+        margin-left: 22pc;
+    }
+
+    .close {
+        font-size: 80px;
+    }
+
+    #myself h1 {
+        bottom: 30px;
+        font-size: 35px;
+        margin-top: 135px;
+    }
+
+    #mydetails {
+        bottom: 23px;
+        position: relative;
+    }
+
+    #mydetails h1 {
+        font-size: 40px;
+    }
+
+    #mydetails h2 {
+        font-size: 22px;
+    }
+
+    #contact, #mailto {
+        top: 8px;
+        position: relative;
+        font-size: 38px !important;
+    }
+
+    #mail {
+        top: 8px;
+        font-size: 23px;
+        position: relative;
+    }
+
+    #assignments {
+        font-size: 52px;
+        margin-top: 100px;
+    }
+
+    hr {
+        width: 12%;
+    }
+
+    #buttons {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .button {
+        width: 55%;
+        padding: 25px;
+        font-size: 40px;
+        margin-top: 25px;
+    }
+
+    #footer {
+        padding: 5px 40px;
+    }
+
+    #footer h4 {
+        font-size: 22px;
+    }
+
+    #footer a {
+        font-size: 20px;
+    }
+
+    #copyright a {
+        bottom: 80px;
+        margin-left: 730px;
+    }
+}

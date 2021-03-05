@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    margin: 0px;
+    padding: 10px 0px;
+    font-family: 'Roboto', 'Arial';
+}
+
+#main {
+    width: 79%;
+    margin: auto;
+} 
+
+img {
+    display: flex;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: lighter;
+}
+
+#admit-card {
+    margin-top: 30px;
+}
+
+#label {
+    width: 100%;
+    margin-top: 20px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#label p {
+    margin: 0px;
+    color: gray;
+    min-width: 49%;
+}
+
+#dropdown, #birth {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#dropdown select {
+    width: 49%;
+    border: none;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 0px;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    border-bottom: 1px solid gray;
+}
+
+#name, #cnic, #fname, #address, #contact, #email {
+    width: 100%;
+    height: 30px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    margin-top: 35px;
+    border-bottom: 1px solid gray;
+}
+
+#max-char, #cnic-num, #contact-ex, #email-ex, #dummy {
+    color: gray;
+    font-size: 12px;
+    margin: 8px 0px 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#date, #age input {
+    width: 30px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    padding: 5px 0px;
+    font-family: inherit;
+    border-bottom: 1px solid gray;
+}
+
+#age input {
+    width: 100%;
+    opacity: 0.3;
+    background-color: transparent;
+    border-bottom: 1px dotted gray;
+}
+
+#gender input, #qualification input {
+    width: 18px;
+    height: 18px;
+    margin: 12px;
+    cursor: pointer;
+}
+
+#gender input + span, #qualification input + label, #terms + label {
+    bottom: 3px;
+    color: black;
+    font-size: 17px;
+    cursor: pointer;    
+    position: relative;
+    font-family: Arial;
+}
+
+#pic {
+    margin-top: 10px;
+}
+
+#max-size {
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#priority {
+    cursor: grab;
+    height: 110px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+#priority div {
+    width: 100px;
+    height: 100%;
+    font-family: Arial;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#timing {
+    height: 100%;
+    bottom: 18px;
+    min-width: 170px;
+    position: relative;
+}
+
+li {
+    font-size: 17px;
+    margin-top: 20px;
+    font-family: Arial;
+}
+
+#terms {
+    width: 18px;
+    height: 18px;
+    margin: 30px 10px 40px;
+}
+
+
+#submit {
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 2px;
+    font-family: inherit;
+    background-color: #3f51b5;
+    margin-top: 20px;
+    box-shadow: 1px 1px 3px gray;
+}
+
+#submit:hover {
+    background-color: #3243a8;
+}
+
+#footer {
+    color: gray;
+    font-size: 14px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+
+#name:hover, #date:hover, #cnic:hover, #fname:hover, #address:hover, #contact:hover, #email:hover {
+    border-bottom: 2px solid black;
+}
+
+#name:hover + #max-char, #cnic:hover + #cnic-num, #contact:hover + #contact-ex, #email:hover + #email-ex,
+#fname:hover + #dummy, #address:hover + #dummy {
+    margin-top: 7px;
+}
+
+#droppdown select:focus, #name:focus, #date:focus, #cnic:focus, #fname:focus, #address:focus, #contact:focus, #email:focus {
+    outline: none;
+}

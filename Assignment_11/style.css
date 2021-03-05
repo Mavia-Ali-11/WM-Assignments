@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    background-repeat: no-repeat;
+    background-color: dodgerblue;
+    background-image: url('images/bg_img.jpg');
+}
+
+#plus,  #divide {
+    top: 30px;
+    opacity: 0.3;
+    color: white;
+    font-size: 100px;
+    margin-left: 70px;
+    position: absolute;
+}
+
+#minus, #multiply {
+    top: 50px;
+    opacity: 0.3;
+    float: right;
+    color: white;
+    font-size: 100px;
+    position: relative;
+    margin-right: 150px;
+}
+
+#multiply {
+    top: 430px;
+    margin-right: -120px;
+}
+
+#divide {
+    top: 450px;
+    margin-left: 120px;
+}
+
+
+
+
+table {
+    transition: 1s;
+    margin: 50px auto;
+    margin-bottom: 80px;
+    border-collapse: collapse;
+}
+
+thead, tbody ,tfoot {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+table td {
+    width: 100px;
+}
+
+input {
+    border: none;
+    width: 366px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: right;
+    padding: 25px 17px;
+    border-radius: 0px;
+    font-family: inherit;
+    background: deepskyblue;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    border: none;
+    color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 300;
+    font-family: inherit;
+    background-color: white;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+#functions {
+    box-shadow: none;
+}
+
+.functions button {
+    height: 35px;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    background-color: #374353;
+}
+
+#scientific {
+    width: 100%;
+    margin: auto;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 0px;
+    background-color: ghostwhite;
+}
+
+#card1, #card2 {
+    transition: transform 1s;
+    transform: translateY(-140px);
+}
+
+hr {
+    width: 8%;
+    border: 1px solid slategray;
+}
+
+.others {
+    font-weight: 500;
+    color: #374353;
+}
+
+.operators {
+    color: white;
+    background-color: #5b6a7d;
+}
+
+.equals {
+    height: 70px;
+    color: white;
+    font-size: 30px;
+    transition: 0.3s;
+    background-color: dodgerblue;
+}
+
+button:hover, .functions button:hover, .operators:hover, .others:hover {
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.05);
+    background-color: deepskyblue;
+}
+
+.equals:hover {
+    transition: 0.3s;
+    transform: scale(1.02);
+    background-color: dodgerblue;
+}
+
+button:active, .functions button:active, .operators:active, .equals:active, .others:active {
+    transition: 0s;
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 420px) {
+    table {
+        zoom: 80%;
+        margin: 50px auto;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    table {
+        zoom: 70%;
+    }
+}

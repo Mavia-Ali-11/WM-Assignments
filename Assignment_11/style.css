@@ -7,38 +7,6 @@ body {
     background-image: url('images/bg_img.jpg');
 }
 
-#plus,  #divide {
-    top: 30px;
-    opacity: 0.3;
-    color: white;
-    font-size: 100px;
-    margin-left: 70px;
-    position: absolute;
-}
-
-#minus, #multiply {
-    top: 50px;
-    opacity: 0.3;
-    float: right;
-    color: white;
-    font-size: 100px;
-    position: relative;
-    margin-right: 150px;
-}
-
-#multiply {
-    top: 430px;
-    margin-right: -120px;
-}
-
-#divide {
-    top: 450px;
-    margin-left: 120px;
-}
-
-
-
-
 table {
     transition: 1s;
     margin: 50px auto;
@@ -105,10 +73,11 @@ input:focus, button:focus {
 #scientific {
     width: 100%;
     margin: auto;
-    color: white;
+    color: black;
     cursor: pointer;
     font-size: 14px;
     padding: 5px 0px;
+    text-align: center;
     background-color: ghostwhite;
 }
 
@@ -143,7 +112,6 @@ hr {
 button:hover, .functions button:hover, .operators:hover, .others:hover {
     color: white;
     transition: 0.3s;
-    transform: scale(1.05);
     background-color: deepskyblue;
 }
 
@@ -161,7 +129,7 @@ button:active, .functions button:active, .operators:active, .equals:active, .oth
 @media only screen and (max-width: 420px) {
     table {
         zoom: 80%;
-        margin: 50px auto;
+        margin: 85px auto;
     }
 }
 

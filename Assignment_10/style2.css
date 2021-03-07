@@ -237,6 +237,7 @@ td:last-child {
 
 .angles .col-1 {
     flex-basis: 24%;
+    cursor: pointer;
     max-width: 420px;
 }
 

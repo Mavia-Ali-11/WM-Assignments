@@ -13,6 +13,11 @@ function openNavbar() {
     }
 }
 
+// (Product Details) Change Images
+
+function changeImage(path) {
+    document.getElementById('defaultImg').setAttribute('src',path);
+}
 
 // Toggle Form
 

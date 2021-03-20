@@ -1,0 +1,190 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#header-1{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(silver, white);
+    width: 100%;
+    height: 30px;
+}
+
+#text-header-1{
+        font-size: 15px;
+    padding-left: 5px;
+}
+
+#image-header-1{
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+
+#span-header-1{
+    display: flex;
+    position: absolute;
+    right: 10px;
+}
+
+#image-row-2{
+    margin-top: 10px;
+    width: 80%;
+}
+
+#text-2-header-1:hover{
+    text-decoration: underline black;
+}
+
+#row-2{
+    margin-bottom: 10px;
+}
+
+#gray-bg-body-main-navbar-table{
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.table-col-hover:hover{
+    background-color: rgb(208, 131, 207);
+    transition: 1s;
+}
+
+#gray-bg-body-main-logo-img{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gray-bg-body-main-table-2{
+    background-color: rgb(44, 44, 44);
+    width: 95%;
+    height: 50px;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.fa-home{
+    font-size: 25px;
+}
+
+.table-2-col-hover:hover{
+    background-color: rgb(208, 131, 207);
+    transition: 1s;
+}
+
+.table-2-span-marquee{
+    margin: 0px 30px;
+}
+
+#gray-bg-body-main-table-3{
+    background-color: rgb(44, 44, 44);
+    width: 95%;
+    height: 50px;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.table-2-span-marquee-anchor{
+    text-decoration: none;
+    color: white;
+}
+
+.table-2-span-marquee-anchor:hover{
+    text-decoration: underline;
+}
+
+.social-symbol{
+    width: 4%; 
+    font-size: 20px; 
+    background-color: white; 
+    color: rgb(93, 91, 91); 
+    text-align: center; 
+    border: 1px solid #ccc;
+}
+
+.navbar-facebook:hover{
+    background-color: #436eac ;
+    transition: 1.5s;
+    color: white ;
+}
+
+.navbar-twitter:hover{
+    background-color: #0598c9 ;
+    transition: 1.5s;
+    color: white ;
+}
+
+.navbar-flickr:hover{
+    background-color: #e33b7e ;
+    transition: 1.5s;
+    color: white ;
+}
+
+.navbar-pinterest:hover{
+    background-color: #cb2027 ;
+    transition: 1.5s;
+    color: white ;
+}
+
+.navbar-googleplus:hover{
+    background-color: #d64b2e ;
+    transition: 1.5s;
+    color: white ;
+}
+
+.navbar-vimeo:hover{
+    background-color: #86ae24 ;
+    transition: 1.5s;
+    color: white ;
+}
+
+.navbar-youtube:hover{
+    background-color: #e32114 ;
+    transition: 1.5s;
+    color: white ;
+}
+
+.navbar-envelope:hover{
+    background-color: #bc75d6 ;
+    transition: 1.5s;
+    color: white ;
+}
+
+#table-4{
+    font-family: 'Ubuntu';
+    border: none;
+    margin-top: 20px;
+}
+
+.table-4-span{
+    /* display: inline; */
+    width: 70%;
+    float: right;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.table-4-span-anchor{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+#table-5{
+    font-family: 'Ubuntu';
+    border: none;
+    margin-top: 20px;
+}
+
+.under-image:hover{
+    color: rgb(208, 131, 207) !important;
+}

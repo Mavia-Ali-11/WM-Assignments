@@ -1,0 +1,595 @@
+@font-face {
+    font-family: Roboto;
+    src: url('assets/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url('assets/Roboto/Roboto-Bold.ttf');
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    scroll-behavior: smooth;
+}
+
+nav {
+    border: 0px;
+    text-align: left;
+    background-color: white;
+    padding: 10px 55px !important;
+    border-bottom: 2px solid lavender;
+}
+
+.navbar-brand img:hover {
+    opacity: 0.8;
+}
+
+.brand {
+    top: -20px;
+    color: #444;
+    font-size: 38px;
+    transition: 0.3s;
+    position: relative;
+    text-decoration: none;
+    border: 1px dotted transparent;
+}
+
+.nav-link {
+    color: black;
+    font-size: 15px;
+    margin-right: 5px;
+    margin-bottom: 28px;
+    font-family: Verdana;
+    border: 1px dotted transparent;
+}
+
+.nav-item i {
+    top: 10px;
+    left: 8px;
+    color: #444;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.brand:hover, .nav-link:hover, .nav-item i:hover {
+    transition: 0.3s;
+    color: dodgerblue;
+}
+
+.brand:focus, .nav-link:focus {
+    border: 1px dotted dodgerblue;
+}
+
+.dropdown-menu {
+    top: 40px;
+    border: none;
+    padding: 0px;
+    font-size: 14px;
+    position: relative;
+    border-radius: 0px;
+    border-top: 1px solid dodgerblue;
+    border-bottom: 1px solid lavender;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item:hover {
+    color: black;
+    background-color: transparent;
+}
+
+.dropdown-item:focus {
+    border: none;
+    color: black;
+    background-color: transparent;
+    border: 1px dotted dodgerblue;
+}
+
+.toggle {
+    width: 100%;
+    padding: 5px 0px;
+    margin-top: 15px;
+    background-color: #444;
+}
+
+.toggle i, .toggle span {
+    color: white;
+    margin-right: 15px;
+}
+
+.toggle:active {
+    outline: none !important;
+}
+
+.toggle:hover {
+    outline: none;
+    background-color: dodgerblue;
+}
+
+.slider, #contact {
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-image: url('assets/river.jpg');
+}
+
+.image, .statue {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 150px 10px;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.image .row, .statue .row {
+    margin: auto;
+    width: 1250px;
+    padding: 50px 0px;
+}
+
+.image div h1 {
+    color: white;
+    font-size: 77px;
+    line-height: 80px;
+    font-family: RobotoBold;
+}
+
+.image div hr {
+    opacity: 1;
+    width: 100px;
+    margin-top: 25px;
+    border: 2px solid lavender;
+}
+
+.image div p {
+    font-size: 20px;
+    color: #efefef;
+}
+
+.appointment {
+    border: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 8px 23px;
+    background-color: #2d54de;
+}
+
+.appointment:hover {
+    background-color: #5473e4;
+}
+
+#services {
+    width: 100%;
+    padding: 100px 0px;
+    max-height: fit-content;
+}
+
+#services .row {
+    margin: auto;
+    max-width: 1250px;
+}
+
+#services .row div {
+    margin: auto;
+    padding: 10px;
+    max-width: 405px;
+    text-align: center;
+}
+
+#services .row div i {
+    font-size: 90px;
+    color: dodgerblue;
+    transition: 0.3s ease;
+}
+
+#services .row div i:hover {
+    transition: 0.3s ease;
+    transform: translateY(-10px);
+}
+
+#services .row div h2 {
+    color: #052944;
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 35px;
+    letter-spacing: 2px;
+}
+
+#services .row div p {
+    color: #444;
+    margin-top: 20px;
+}
+
+#about .row  {
+    margin: auto;
+    max-width: 1220px;
+}
+
+#about .row div h1 {
+    color: #052944;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#about .row div p {
+    color: #7a7a7a;
+    line-height: 25px;
+}
+
+.aboutImg img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 50px;
+}
+
+.socialMedia, .contacts {
+    padding: 0px;
+    max-width: 768px;
+    margin-top: 30px;
+    max-height: 100px;
+}
+
+.socialMedia i, .contacts i {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 8px;
+    padding: 15px 17px;
+    border-radius: 50px;
+    background-color: dodgerblue;
+}
+
+.socialMedia i:hover {
+    transition: 0.3s ease;
+    transform: scale(1.1);
+    background-color: black;
+}
+
+.decoration {
+    min-width: 100%;
+    margin-top: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("assets/students.jpg");
+}
+
+.studentsImg {
+    width: 100%;
+    height: 100%;
+    padding: 130px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.advertise {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.advertise h2 {
+    color: white;
+    font-size: 36px;
+    line-height: 55px;
+    font-family: RobotoBold;
+}
+
+#skills {
+    width: 100%;
+    margin: 20px 0px;
+    padding: 100px 0px;
+    background-color: #f1f3f5;
+}
+
+#skills .row {
+    margin: auto;
+    max-width: 1220px;
+}
+
+#skills div h1 {
+    font-size: 42px;
+    color: #052944;
+    font-family: RobotoBold;
+}
+
+#skills div hr {
+    opacity: 1;
+    width: 100px;
+    margin-bottom: 30px;
+    border: 1px solid gainsboro;
+}
+
+.progress {
+    height: 29px;
+    margin-top: 40px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.progress-bar {
+    width: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    transition: 1s ease;
+    background: dodgerblue !important;
+}
+
+.progress-bar div {
+    font-size: 11px;
+    text-align: left;
+    padding: 0px 15px;
+}
+
+.testimonials {
+    width: 100%;
+    padding: 100px 10px;
+    max-height: fit-content;
+    background-color: #666666;
+}
+
+.testimonials h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.testimonials hr {
+    opacity: 1;
+    width: 100px;
+    margin: 18px auto 40px auto;
+    border: 1px solid lavender;
+}
+
+.testimonials .row {
+    margin: auto;
+    max-width: 1245px;
+}
+
+.testimonials .row div {
+    max-width: 386px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 38px 20px;
+    max-height: fit-content;
+    background-color: white;
+}
+
+.testimonials .row img {
+    width: 85px;
+    height: 85px;
+    margin: 20px 0px;
+    border-radius: 100px;
+}
+
+.testimonials .row h6 {
+    font-weight: 700;
+    color: dodgerblue;
+}
+
+#contact {
+    margin: 1px 0px;
+    background-image: url('assets/statueofliberty.jpg');
+}
+
+.statue {
+    color: white;
+    padding: 50px 10px;
+}
+
+.statue div h1 {
+    font-size: 43px;
+    margin-top: 15px;
+    font-family: RobotoBold;
+}
+
+.statue div hr {
+    opacity: 1;
+    width: 100px;
+    margin-bottom: 30px;
+    border: 1px solid lavender;
+}
+
+.contacts i {
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 10px 12px;
+    transition: 0.3s ease;
+}
+
+.contacts i:hover {
+    opacity: 0.9;
+    transition: 0.3s ease;
+    transform: translateY(-7px);
+}
+
+.footer {
+    width: 100%;
+    padding: 28px 10px;
+    background-color: #333;
+}
+
+.footer .row {
+    margin: auto;
+    padding: 10px 2px;
+    max-width: 1250px;
+}
+
+.footer .row div h5 {
+    font-size: 20px;
+    color: gainsboro;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-family: Verdana;
+    max-width: fit-content;
+    border-bottom: 2px solid dodgerblue;
+}
+
+.footer .row div p {
+    color: #999;
+    font-size: 13px;
+}
+
+.footer .row div a {
+    display: block;
+    font-size: 14px;
+    max-width: 405px;
+    padding: 5px 0px;
+    transition: 0.5s;
+    color: gainsboro;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+.footer .row a:hover {
+    transition: 0.5s;
+    color: dodgerblue;
+}
+
+.footer .row div span {
+    color: #999;
+    margin-left: 5px;
+}
+
+.copyright .row {
+    margin: auto;
+    color: #666;
+    padding: 11px;
+    font-size: 11px;
+    max-width: 1250px;
+    font-family: Verdana;
+}
+
+#top {
+    width: 38px;
+    right: 15px;
+    height: 38px;
+    bottom: 15px;
+    border: none;
+    display: flex;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    font-size: 20px;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s linear;
+    transform: translateY(65px);
+    background-color: rgba(30, 144, 255, 0.5);
+}
+  
+#top:hover {
+    background-color: dodgerblue;
+}
+
+@media screen and (max-width: 1140px) {
+    .brand {
+        top: 0px;
+    }
+    .nav-link {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    nav {
+        padding: 10px 0px !important;
+    }
+    .navbar-brand {
+        width: 100%;
+        text-align: center;
+    }
+    .brand {
+        top: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .active {
+        color: white !important;
+        background: dodgerblue !important;
+    }
+    .nav-link {
+        margin: 0px;
+        color: white;
+        border: none !important;
+        background-color: #444;
+        padding-left: 20px !important;
+    }
+    .nav-link:hover, .dropdown:hover, 
+    .dropdown-menu:hover, .dropdown-item:focus {
+        border: none;
+        color: white;
+        background-color: dodgerblue;
+    }
+    .dropdown-menu {
+        padding: 5px;
+        border: none;
+        display: block;
+        background-color: #444;
+    }
+    .dropdown-item {
+        border: none;
+        padding-left: 35px;
+        color: white !important;
+    }
+    .skills {
+        padding: 0px 12px !important;
+    }
+    .copyright .row {
+        line-height: 18px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .image, .statue {
+        padding: 0px 10px;
+    }
+    .image .row div h1 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .image .row div p {
+        font-size: 16px;
+    }
+    #services {
+        padding: 60px 0px;
+    }
+    #services .row div {
+        max-width: fit-content;
+    }
+    .aboutImg img {
+        margin-top: 0px;
+    }
+    #skills {
+        padding: 50px 0px;
+    }
+    .skills {
+        margin-top: 35px;
+    }
+    .studentsImg, .testimonials {
+        padding: 80px 10px ;
+    }
+    .testimonials hr {
+        margin-bottom: 60px;
+    }
+    .testimonials .row div {
+        max-width: 100%;
+        margin-top: 5px;
+    }
+}

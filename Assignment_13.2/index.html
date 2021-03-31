@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Owlkidsacademy – Nauka Angielskiego dla dzieci w wieku 4-12 lat</title>
+</head>
+
+<body onload="dropImages()">
+    <div class="container-fluid p-0">
+
+        <!-- Fancy -->
+
+        <div class="container-fluid fancy"></div>
+
+        <!-- Topping -->
+
+        <div class="container-fluid col-12 topping" style="background-color: #333;">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-2 col-lg-2">
+                    <i class="fa fa-phone"></i><span>+48-587-313-455</span>
+                </div>
+                <div class="col-6 col-sm-6 col-md-2 col-lg-2">
+                    <i class="fa fa-envelope"></i><span>book@owlkids.pl</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Navbar -->
+
+        <nav class="navbar navbar-expand-lg position-sticky top-0">
+            <div class="container-fluid">
+                <a class="navbar-brand d-none d-lg-block" href="index.html"><img src="assets/logo.png" alt="logo"></a>
+
+                <div class="container-fluid d-lg-none">
+                    <div class="row mobile-nav">
+                        <div class="col-5 col-sm-4 col-md-4" style="justify-content: flex-start;">
+                            <a class="toggle-sm">
+                                <button class="nav-dropdown" style="text-align: left;" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <i class="fa fa-navicon" id="icons"></i>
+                                    <span class="menu">Menu</span>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="col-2 col-sm-4 col-md-4" style="justify-content: center;">
+                            <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
+                        </div>
+
+                        <div class="col-5 col-sm-4 col-md-4" style="justify-content: flex-end;">
+                            <i class="fa fa-search" id="icons"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left: auto;">
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="javascript:void(0)">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link p-0" href="javascript:void(0)" role="button"
+                                aria-expanded="false">Offer</a>
+                            <ul class="dropdown-menu p-0">
+                                <li><a class="dropdown-item py-2" href="javascript:void(0)">Trial Lesson</a></li>
+                                <hr>
+                                <li><a class="dropdown-item py-2" href="javascript:void(0)">Curriculum</a></li>
+                                <hr>
+                                <li><a class="dropdown-item py-2" href="javascript:void(0)">Sample Lesson</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="javascript:void(0)">Education Cost</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="javascript:void(0)">Teachers</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link p-0" href="javascript:void(0)" role="button"
+                                aria-expanded="false">Contact</a>
+                            <ul class="dropdown-menu p-0">
+                                <li><a class="dropdown-item py-2" href="javascript:void(0)">Teacher Recruiter</a></li>
+                                <hr>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="javascript:void(0)">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="javascript:void(0)"><img src="assets/flag1.png"
+                                    style="margin: 0px 5px 3px 0px;" alt="US">English</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="javascript:void(0)"><img src="assets/flag2.png"
+                                    style="margin: 0px 5px 3px 0px;" alt="Poland">Polski</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Slider -->
+
+        <div class="container-fluid col-12 slider">
+            <div class="row effect" id="effect">
+                <div id="inner-slider">
+                    <div class="col-12 last" style="display: none; padding: 100px 0px;">
+                        <h4 id="lasth4">Owlkids Academy</h4>
+                        <h3 style="color: tomato;" id="lasth3">English for kids aged 4-12</h3>
+                        <p id="lastp" style="color: black;">Lesson with the native speaker in the form of having fun is
+                            a perfect solution for kids!</p>
+                        <div class="flower"></div>
+                    </div>
+                    <div class="cloud" id="cloud">
+                        <div class="sliderText">
+                            <h4 id="cloudh4">Owlkids Academy</h4>
+                            <h3 style="color: tomato;" id='cloudh3'>English for kids aged 4-12</h3>
+                            <p id="cloudp">Lesson with the native speaker in the form of having fun is a perfect
+                                solution for kids!
+                            </p>
+                        </div>
+                        <div class="flower"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Lesson -->
+
+        <div class="container-fluid col-12 video" style="margin: 60px 0px;">
+            <div class="heading text-center">
+                <h1>The most important advantages of a video-lesson</h1>
+                <hr><i class="fa fa-graduation-cap"></i>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4" style="flex: 2;">
+                    <div class="col-12 right" id="one" style="border: 1px solid dodgerblue;"
+                        onmouseover="changeImg('lesson1')">
+                        <i class="fa fa-send-o"></i>
+                        <h5>Learning In Front Of The Screen</h5>
+                        <p>Possibility of remote learning is a great convenience for parents and children. It saves a
+                            lot of time and money.</p>
+                    </div>
+
+                    <div class="col-12" id="two" onmouseover="changeImg('lesson2')">
+                        <h5><i class="fa fa-desktop"></i>Computer Skills</h5>
+                        <p>This is a great way to improve your technical computer literacy. The child works on his
+                            intuition in the use of programs other than games.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 lessonImg" style="flex: 6;">
+                    <div class="col-12 p-0 border-0" id="lessonImg" style="background-image: url(assets/lesson1.jpg);">
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4" style="flex: 2;">
+                    <div class="col-12" id="three" onmouseover="changeImg('lesson3')">
+                        <i class="fa fa-html5"></i>
+                        <h5>Individual Approach To The Student</h5>
+                        <p>Video lessons are conducive to an individualized path of cooperation between the teacher and
+                            the child. The student is not distracted by peers, thanks to which he focuses on the
+                            acquisition of knowledge in the maximum way, the learning process is effective, and the
+                            video-lesson becomes much more fruitful compared to the standard teaching mode.</p>
+                    </div>
+
+                    <div class="col-12" id="four" onmouseover="changeImg('lesson4')">
+                        <h5><i class="fa fa-paint-brush"></i>Competence Development</h5>
+                        <p>Individual lessons have a positive effect on the development of your child's social skills.
+                            The teacher encourages the student to interact and talk actively.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comprehensive curriculum -->
+
+        <div class="container-fluid col-12 curriculum">
+            <div class="heading text-center">
+                <h1 id="small">Comprehensive curriculum</h1>
+                <hr><i class="fa fa-graduation-cap"></i>
+                <hr>
+            </div>
+            <div class="row main" style="margin-top: 70px;">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 p-0 crrImg">
+                    <div class="col-12 p-0 border-0"></div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 icon">
+                                <i class="fa fa-graduation-cap" id="graduate"></i>
+                            </div>
+
+                            <div class="col-9 col-sm-9 col-md-9 col-lg-9 content">
+                                <div class="col-12">
+                                    <h4>Comprehensive curriculum</h4>
+                                    <p>Our program is based on the most effective teaching method "synthetic phonics".
+                                        This
+                                        method involves teaching children the sounds of letters, thanks to which our
+                                        students will
+                                        be able to read the next words.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 icon">
+                                <i class="fa fa-user" id="user"></i>
+                            </div>
+
+                            <div class="col-9 col-sm-9 col-md-9 col-lg-9 content">
+                                <div class="col-12">
+                                    <h4>1v1 lessons</h4>
+                                    <p>Don't let your child get lost among the many students in the class. 1v1 lessons
+                                        provide 100% of the teacher's attention on one child. Such a learning system
+                                        allows
+                                        all students to acquire knowledge more accurately.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 icon">
+                                <i class="fa fa-cogs" id="settings"></i>
+                            </div>
+
+                            <div class="col-9 col-sm-9 col-md-9 col-lg-9 content">
+                                <div class="col-12">
+                                    <h4>Any form of learning</h4>
+                                    <p>Our teachers are available at times that are convenient for you. Learning is not
+                                        dependent on the teacher's availability.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 icon">
+                                <i class="fa fa-users" id="users"></i>
+                            </div>
+
+                            <div class="col-9 col-sm-9 col-md-9 col-lg-9 content">
+                                <div class="col-12">
+                                    <h4>Experienced, certified teachers</h4>
+                                    <p>All our teachers are certified, which guarantees a lesson at the highest level.
+                                        We know
+                                        how to pass knowledge to a child in an interesting and professional way.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course price list -->
+
+            <div class="container-fluid col-12 price p-0 mt-3 mt-sm-5 mt-md-auto mt-lg-auto">
+                <div class="heading text-center">
+                    <h1>Course price list</h1>
+                    <hr><i class="fa fa-graduation-cap"></i>
+                    <hr>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-0 card1">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 px-4 py-4">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-12 col-lg-12 p-0">
+                                        <h4>Native Speaker</h4>
+                                        <li><i class="fa fa-check-square-o"></i><span>1 lesson 55 PLN</span></li>
+                                        <li><i class="fa fa-check-square-o"></i><span>5 lessons 265 PLN</span></li>
+                                        <li><i class="fa fa-check-square-o"></i><span>10 lessons 520 PLN</span></li>
+                                        <li><i class="fa fa-check-square-o"></i><span>15 lessons 750 PLN</span></li>
+                                        <div class="chooseBtn">
+                                            <p class="text-center">
+                                                CHOOSE A PLAN
+                                                <i class="fa fa-angle-right" id="arrow"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 mt-4 d-block d-sm-block d-md-none d-lg-none">
+                                        <div class="starting" style="top: 0px; right: 0px; min-width: 150px;">
+                                            <p class="text-center">From 50 PL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center text-md-end text-lg-end px-0">
+                                <img src="assets/pricing1.png" style="border-top-right-radius: 5px;" width="100%">
+                                <div class="starting d-none d-sm-none d-md-block d-lg-block">
+                                    <p class="text-center">From 50 PL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-0 card2">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 px-4 py-4">
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 col-md-12 col-lg-12 p-0">
+                                        <h4>Near Native Speaker</h4>
+                                        <li><i class="fa fa-check-square-o"></i><span>1 lesson 35 PLN</span></li>
+                                        <li><i class="fa fa-check-square-o"></i><span>5 lessons 170 PLN</span></li>
+                                        <li><i class="fa fa-check-square-o"></i><span>10 lessons 290 PLN</span></li>
+                                        <li><i class="fa fa-check-square-o"></i><span>15 lessons 420 PLN</span></li>
+                                        <div class="chooseBtn">
+                                            <p class="text-center">
+                                                CHOOSE A PLAN
+                                                <i class="fa fa-angle-right" id="arrow"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="col-12 col-sm-3 mt-4 d-block text-center d-sm-block d-md-none d-lg-none">
+                                        <div class="starting" style="top: 0px; right: 0px; min-width: 150px;">
+                                            <p class="text-center">From 50 PL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center text-md-end text-lg-end px-0">
+                                <img src="assets/pricing2.png" style="border-top-right-radius: 5px;" width="100%">
+
+                                <div class="starting d-none d-sm-none d-md-block d-lg-block">
+                                    <p class="text-center">From 28 PL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learn with owlkids -->
+
+        <div class="container-fluid col-12 learn p-0">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center childrens">
+                    <img src="assets/children.png" width="45%">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center owlkids">
+                    <div class="learnText">
+                        <h6>LEARN WITH OWLKIDS</h6>
+                        <p>The main goal of Owlkids Academy is to break the fear in children of speaking in a foreign
+                            language.
+                            We think the best way to achieve that is by creating a comfortable learning environment for
+                            the kid by
+                            1 v 1 Child - Teacher lessons.</p>
+                        <button>ABOUT US</button>
+                        <button>CONTACT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How do we learn? -->
+
+        <div class="container-fluid col-12 bg-light p-0 tutorial">
+            <div class="col-12 child1">
+                <div class="heading text-center">
+                    <h1>OWLKIDS - How do we learn?</h1>
+                    <hr><i class="fa fa-graduation-cap"></i>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-12 child2">
+                <iframe width="565" height="425" src="https://www.youtube.com/embed/0pZrlDAOL8c"
+                    title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- How do we learn? -->
+
+        <div class="container-fluid col-12 p-0 faculty">
+            <div class="col-12 child1"></div>
+            <div class="col-12 child2">
+                <div class="teacher mx-0" style="min-height: 50px;">
+                    <div class="col-12 teacherImg">
+                        <img src="assets/teacher1.jpg" style="border-radius: 200px;">
+                    </div>
+                    <div class="col-12 intro">
+                        <h5>MONIQUE</h5>
+                        <h6>Near - Native Speaker</h6>
+                        <p>Hello! My name is Monique and for the last 3 years I've been teaching the English
+                            language, thanks to which I had...</p>
+                    </div>
+                </div>
+
+                <div class="teacher mx-3" style="min-height: 50px;">
+                    <div class="col-12 teacherImg">
+                        <img src="assets/teacher2.jpg" style="border-radius: 200px;">
+                    </div>
+                    <div class="col-12 intro">
+                        <h5>CHRIS</h5>
+                        <h6>Native Speaker</h6>
+                        <p>Hey! My name is Chris and I am an English teacher. I am a native speaker from St. Louis,
+                            Missouri (USA)...</p>
+                    </div>
+                </div>
+
+                <div class="teacher mx-0" style="min-height: 50px;">
+                    <div class="col-12 teacherImg">
+                        <img src="assets/teacher3.jpg" style="border-radius: 200px;">
+                    </div>
+                    <div class="col-12 intro">
+                        <h5>ALEKSANDRA</h5>
+                        <h6>Native Speaker</h6>
+                        <p>Hello parents and future students! My name is Aleksandra and I am a teacher of English. I
+                            am excited to teach...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  Gallery -->
+
+        <div class="container-fluid col-12 gallery">
+            <div class="heading text-center">
+                <h1>Gallery</h1>
+                <hr><i class="fa fa-graduation-cap"></i>
+                <hr>
+                <p>Take a look at our lessons!</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 images">
+                    <div class="col-12">
+                        <img src="assets/gallery1.jpg">
+                        <i class="fa fa-plus" onclick="openImage('assets/gallery1.jpg')"></i>
+                    </div>
+                    <div class="col-12">
+                        <img src="assets/gallery4.jpg">
+                        <i class="fa fa-plus" onclick="openImage('assets/gallery4.jpg')"></i>
+                    </div>
+                    <div class="col-12">
+                        <img src="assets/gallery7.jpg">
+                        <i class="fa fa-plus" onclick="openImage('assets/gallery7.jpg')"></i>
+                    </div>
+                    <div class="col-12">
+                        <img src="assets/gallery10.jpg">
+                        <i class="fa fa-plus" onclick="openImage('assets/gallery10.jpg')"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 images">
+                    <div class="col-12">
+                        <img src="assets/gallery2.jpg">
+                        <i class="fa fa-plus" onclick="openImage('assets/gallery2.jpg')"></i>
+                    </div>
+                    <div class="col-12">
+                        <img src="assets/gallery5.jpg">
+                        <i class="fa fa-plus" onclick="openImage('assets/gallery5.jpg')"></i>
+                    </div>
+                    <div class="col-12">
+                        <img src="assets/gallery8.jpg">
+                        <i class="fa fa-plus" onclick="openImage('assets/gallery8.jpg')"></i>
+                    </div>
+                    <div class="col-12">
+                        <img src="assets/gallery11.jpg">
+                        <i class="fa fa-plus" onclick="openImage('assets/gallery11.jpg')"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 images">
+                    <div class="col-12">
+                        <img src="assets/gallery3.jpg">
+                        <i class="fa fa-plus" onclick="openImage('assets/gallery3.jpg')"></i>
+                    </div>
+                    <div class="col-12">
+                        <img src="assets/gallery6.jpg">
+                        <i class="fa fa-plus" onclick="openImage('assets/gallery6.jpg')"></i>
+                    </div>
+                    <div class="col-12">
+                        <img src="assets/gallery9.jpg">
+                        <i class="fa fa-plus" onclick="openImage('assets/gallery9.jpg')"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+
+        <div id="modal" class="modal">
+            <i class="fa fa-close close"></i>
+            <img class="modal-content" id="modalImg">
+        </div>
+
+        <!-- Book your class -->
+
+        <div class="container-fluid col-12 book" style="background-color: #fafafa;">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-8">
+                    <h2>Book Your Class</h2>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 bookBtn">
+                    <div>
+                        <button>Book Your Class</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upcoming Events -->
+
+        <div class="container-fluid col-12 events">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-7 col-lg-7 p-0">
+                    <div class="text-center text-sm-center text-md-center text-lg-start">
+                        <h2>Upcoming Events!</h2>
+                        <hr>
+                    </div>
+                    <div class="col-12 text-center text-sm-center text-md-center text-lg-start">
+                        <p class="date">20-03-2021</p>
+                        <p>Z okazji pierwszego dnia Wiosny zapraszamy do skorzystania z naszej oferty 5 lekcji w cenie
+                            100,00 zł. Oferta ważna od 20-03-2021, w cenie promocyjnej tylko dla nowych klientów.</p>
+                    </div>
+                    <div class="row counter">
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                            <h1>00</h1>
+                            <h6>DAYS</h6>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                            <h1>00</h1>
+                            <h6>HOURS</h6>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                            <h1>00</h1>
+                            <h6>MINUTES</h6>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                            <h1>00</h1>
+                            <h6>SECONDS</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-5 col-lg-5 p-0 advertise">
+                    <img src="assets/advertise.jpg" alt="Spring Sale Ad">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="container-fluid col-12 footer">
+            <div class="row">
+                <div class="col-12 col-ms-12 col-md-12 col-lg-12 text-center mb-5 mb-sm-5 mb-md-0 p-0">
+                    <img src="assets/footer-logo.png" alt="logo">
+                </div>
+                <div class="col-12 col-ms-12 col-md-12 col-lg-12 p-0 components">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                            <h6>About us</h6>
+                            <p style="padding: 0px 2px;">OWLKIDS Academy is an English language school for children aged
+                                4-12. Lessons take place
+                                in a dedicated interactive application available on Tablets / Phones / PC.</p>
+                            <div class="contacts">
+                                <div class="child1" style="margin-right: 17px;">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <div class="child2">
+                                    <span>OWLKIDSLLC, 16192 COASTAL HIGHWAY, LEWES, DE 19958</span>
+                                </div>
+                            </div>
+                            <div class="contacts">
+                                <div class="child1" style="margin-right: 10px;">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="child2">
+                                    <span>support@owlkids.pl</span>
+                                </div>
+                            </div>
+                            <div class="contacts">
+                                <div class="child1" style="margin-right: 14px;">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="child2">
+                                    <span>+48-587-313-455</span>
+                                </div>
+                            </div>
+                            <div class="contacts social">
+                                <i class="fa fa-facebook" style="padding: 8px 12px;"></i>
+                                <i class="fa fa-instagram"></i>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 secondChild">
+                            <h6>Info</h6>
+                            <p>Privacy Policy</p>
+                            <p>Regulations</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                            <h6>Instagram</h6>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 fourthChild">
+                            <h6>Accepted methods of payment</h6>
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-12 col-lg-12 mt-2 p-0">
+                                    <img src="assets/mastercard.png" width="140px" alt="master-card">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-12 col-lg-12 m-0 m-sm-0 mt-md-3 mt-lg-3 p-0">
+                                    <img src="assets/stripe.png" width="140px" alt="stripe">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fancy -->
+
+        <div class="container-fluid fancy" style="height: 2px;"></div>
+
+        <!-- Copyright -->
+
+        <div class="container-fluid col-12 copyright">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <p>© 2020 Copyright by <a href="#" class="text-decoration-none" style="color: #2ea2cc;">Turboseo -
+                            Creating Websites</a>.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 links">
+                    <a href="#">Offer</a>
+                    <a href="#">Education Cost</a>
+                    <a href="#">Teachers</a>
+                    <a href="#">Trial lesson</a>
+                    <a href="#">Regulations</a>
+                    <a href="#" style="margin-right: 0px;">Policy</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Go to top  -->
+
+        <button onclick="topFunction()" id="topBtn"><i class="fa fa-angle-up" id="top" aria-hidden="true"></i></button>
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

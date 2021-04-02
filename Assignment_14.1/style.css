@@ -1,0 +1,234 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+    to right top, 
+    #65dfc9, dodgerblue, #6cdbeb);
+}
+
+.circle1, .circle2 {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    border-radius: 100%;
+    background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3));
+}
+
+.circle1 {
+    top: 10px;
+    right: 70px;
+}
+
+.circle2 {
+    left: 100px;
+    bottom: 10px;
+}
+
+.dashboard {
+    width: 65%;
+    height: 90%;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2rem);
+    background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3));
+}
+
+.dashboard .profile {
+    flex: 2.6;
+    height: 100%;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5));
+}
+
+.dashboard .profile h4 {
+    font-size: 16px;
+    color: #426696;
+    line-height: 0px;
+    margin-top: 12px;
+}
+
+.dashboard .profile img#avatar {
+    width: 75px;
+    margin-top: 25px;
+}
+
+.dashboard .profile p#pro {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 0px;
+    color: #426696;
+}
+
+.features div {
+    width: 125px;
+    display: flex;
+    margin: 25px auto;
+    align-items: center;
+}
+
+.features div img {
+    width: 27px;
+    margin-right: 25px;
+}
+
+.features div p {
+    opacity: 0.8;
+    font-size: 13px;
+    color: #426696;
+    font-weight: 600;
+    line-height: 0px;
+}
+
+.pro {
+    width: 185px;
+    height: 135px;
+    display: flex;
+    text-align: left;
+    margin: 40px auto;
+    align-items: center;
+    border-radius: 30px;
+    background: linear-gradient(
+    120deg, #65dfc9, dodgerblue);
+}
+
+.pro h6 {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 25px;
+}
+
+.pro img {
+    width: 90px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+.dashboard .games {
+    flex: 7.4;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.holder {
+    width: 75%;
+    height: 85%;
+}
+
+.holder h2 {
+    font-size: 27px;
+    line-height: 0px;
+    color: #426696;
+}
+
+.holder input {
+    border: none;
+    width: 155px;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 7px 20px;
+    border-radius: 50px;
+    font-family: Poppins;
+    transform: translateX(-3px);
+    background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)); 
+}
+
+.holder input:focus {
+    outline: none;
+}
+
+.progress {
+    height: 85%;
+    display: flex;
+    margin-top: 12px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.progress div.game {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 1));
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+}
+
+.progress div.game div {
+    display: flex;
+    max-height: 100%;
+    width: fit-content;
+    align-items: center;
+}
+
+.progress #gameDetails {
+    width: 250px;
+    display: block;
+    transform: translateY(-5px);
+}
+
+.progress div h4 {
+    color: #777;
+    font-size: 16px;
+    line-height: 0px;
+}
+
+.progress div h6 {
+    opacity: 0.6;
+    color: gray;
+    line-height: 0px;
+}
+
+.progress #progressBar {
+    width: 100%;
+    opacity: 0.4;
+    margin-top: -10px;
+    border-radius: 10px;
+    background-color: #ccc;
+}
+
+#progress {
+    width: 60%;
+    padding: 10px 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: linear-gradient(to right, dodgerblue, aqua);
+}
+
+.progress #percentage {
+    font-size: 23px;
+    color: #65dfc9;
+}

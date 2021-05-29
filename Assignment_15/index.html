@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <title>Card Game</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div>
+            <h1>King Game</h1>
+            <span>Lets Guess, Where is a king ?</span>
+        </div>
+        <div class="cards">
+            <div id="card1" onclick="rotateCard(0)"></div>
+            <div id="card2" onclick="rotateCard(1)"></div>
+            <div id="card3" onclick="rotateCard(2)"></div>
+        </div>
+        <div>
+            <h1>You Picked</h1>
+        </div>
+        <div class="cards">
+            <div id="pickCard"></div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            display: flex;
+            padding: 0px 25px;
+            min-height: 100vh;
+            text-align: center;
+            font-family: Calibri;
+            background-size: cover;
+            flex-direction: column;
+            background-repeat: no-repeat;
+            background-image: url("images/background.jpeg");
+        }
+
+        h1 {
+            color: white;
+            font-size: 55px;
+            margin-top: 50px;
+            line-height: 10px;
+        }
+
+        span {
+            color: white;
+            font-size: 25px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .cards div {
+            min-width: 300px;
+            height: 410px;
+            display: flex;
+            cursor: pointer;
+            overflow: hidden;
+            align-items: center;
+            border-radius: 15px;
+            justify-content: center;
+            box-shadow: 0 0 10px #333;
+        }
+
+        #card1, #card2, #card3, #pickCard {
+            margin-top: 30px;
+            background-size: cover;
+            background-image: url("images/backcard.png");
+        }
+    </style>
+    <script src="app.js"></script>
+</body>
+
+</html>
